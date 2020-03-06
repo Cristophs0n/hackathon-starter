@@ -1302,15 +1302,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\cbrennan020\\.nuget\\packages\\": {}
+    "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "HackathonStarter2",
       "projectName": "HackathonStarter2",
-      "projectPath": "C:\\Git\\hackathon-starter\\hackathon-2-data-table-loop\\.local",
-      "packagesPath": "C:\\Users\\cbrennan020\\.nuget\\packages\\",
-      "outputPath": "C:\\Git\\hackathon-starter\\hackathon-2-data-table-loop\\.local"
+      "projectPath": "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\Documents\\RpaHackathon\\hackathon-starter-github\\hackathon-2-data-table-loop\\.local",
+      "packagesPath": "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\Documents\\RpaHackathon\\hackathon-starter-github\\hackathon-2-data-table-loop\\.local"
     },
     "frameworks": {
       "net461": {
