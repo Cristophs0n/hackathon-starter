@@ -77,7 +77,7 @@
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ug:SimpleObjectContainer" Name="GSuiteScope" />
           </ActivityAction.Argument>
-          <uga:SendEmail AttachmentList="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" AuthScopesInvalid="False" Body="[emailBody]" DisplayName="Send Mail Message" sap:VirtualizedContainerService.HintSize="434,288" sap2010:WorkflowViewState.IdRef="SendEmail_1" IsDraft="False" IsHTML="False" Subject="Order Update - Deliveries 'R' Us" To="[{in_CustomerEmailAddress}]">
+          <uga:SendEmail AttachmentList="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" AuthScopesInvalid="False" Body="[emailBody]" DisplayName="Send Mail Message" sap:VirtualizedContainerService.HintSize="434,288" sap2010:WorkflowViewState.IdRef="SendEmail_1" IsDraft="False" IsHTML="True" Subject="Order Update - Deliveries 'R' Us" To="[{in_CustomerEmailAddress}]">
             <uga:SendEmail.Attachments>
               <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
             </uga:SendEmail.Attachments>
