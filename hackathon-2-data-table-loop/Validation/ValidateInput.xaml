@@ -1,0 +1,177 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ValidateInput" this:ValidateInput.in_Address="45 Springwell St, Ballymena" this:ValidateInput.io_Postcode="sd;flkew;lkf" this:ValidateInput.in_CustomerName="Joe Bloggs" this:ValidateInput.in_EmailAddress="email@email.com" this:ValidateInput.in_PhoneNumber="02832908093" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ufa="clr-namespace:UiPath.Form.Activities;assembly=UiPath.Form.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_Address" Type="InArgument(x:String)" />
+    <x:Property Name="io_Postcode" Type="InArgument(x:String)" />
+    <x:Property Name="in_CustomerName" Type="InArgument(x:String)" />
+    <x:Property Name="in_EmailAddress" Type="InArgument(x:String)" />
+    <x:Property Name="in_PhoneNumber" Type="InArgument(x:String)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>776,1814.66666666667</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ValidateInput_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="23">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="18">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ValidateInput" sap:VirtualizedContainerService.HintSize="756,1754.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Int32" Name="index" />
+      <Variable x:TypeArguments="njl:JObject" Name="jsonFormResponse" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="714,1662.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:Boolean" Name="validPostcode" />
+        <Variable x:TypeArguments="x:String" Name="formResponse" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke PostcodeChecker workflow" sap:VirtualizedContainerService.HintSize="672,86.6666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Validation\PostcodeChecker.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="in_Address">[in_Address]</InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_Postcode">[io_Postcode]</InArgument>
+          <OutArgument x:TypeArguments="x:Boolean" x:Key="out_Result">[validPostcode]</OutArgument>
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+      <If Condition="[validPostcode]" sap:VirtualizedContainerService.HintSize="672,1342" sap2010:WorkflowViewState.IdRef="If_1">
+        <If.Else>
+          <Sequence sap:VirtualizedContainerService.HintSize="526,1190" sap2010:WorkflowViewState.IdRef="Sequence_6">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="formattedAddress" />
+              <Variable x:TypeArguments="njl:JObject" Name="jsonPlacesResponse" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <While sap:VirtualizedContainerService.HintSize="484,692" sap2010:WorkflowViewState.IdRef="While_1">
+              <While.Condition>
+                <mva:VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="Not validPostcode" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_1" />
+              </While.Condition>
+              <Sequence sap:VirtualizedContainerService.HintSize="376,530" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ufa:FormActivity Dismissed="{x:Null}" FormFieldsInputData="{x:Null}" FormTitle="{x:Null}" SelectedButton="{x:Null}" DisplayName="Create Form" FormFieldsOutputData="[formResponse]" FormHeight="400" FormSchema="%[{&quot;tag&quot;:&quot;p&quot;,&quot;refreshOnChange&quot;:true,&quot;content&quot;:&quot;Please enter valid customer details&quot;,&quot;key&quot;:&quot;label&quot;,&quot;input&quot;:false,&quot;placeholder&quot;:&quot;&quot;,&quot;prefix&quot;:&quot;&quot;,&quot;customClass&quot;:&quot;&quot;,&quot;suffix&quot;:&quot;&quot;,&quot;multiple&quot;:false,&quot;defaultValue&quot;:null,&quot;protected&quot;:false,&quot;unique&quot;:false,&quot;persistent&quot;:false,&quot;hidden&quot;:false,&quot;clearOnHide&quot;:true,&quot;refreshOn&quot;:&quot;&quot;,&quot;redrawOn&quot;:&quot;&quot;,&quot;tableView&quot;:false,&quot;label&quot;:&quot;Label&quot;,&quot;labelPosition&quot;:&quot;top&quot;,&quot;description&quot;:&quot;&quot;,&quot;errorLabel&quot;:&quot;&quot;,&quot;tooltip&quot;:&quot;&quot;,&quot;hideLabel&quot;:false,&quot;tabindex&quot;:&quot;&quot;,&quot;disabled&quot;:false,&quot;autofocus&quot;:false,&quot;dbIndex&quot;:false,&quot;customDefaultValue&quot;:&quot;&quot;,&quot;calculateValue&quot;:&quot;&quot;,&quot;widget&quot;:null,&quot;attributes&quot;:{},&quot;validateOn&quot;:&quot;change&quot;,&quot;validate&quot;:{&quot;required&quot;:false,&quot;custom&quot;:&quot;&quot;,&quot;customPrivate&quot;:false,&quot;strictDateValidation&quot;:false},&quot;conditional&quot;:{&quot;show&quot;:null,&quot;when&quot;:null,&quot;eq&quot;:&quot;&quot;},&quot;overlay&quot;:{&quot;style&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;top&quot;:&quot;&quot;,&quot;width&quot;:&quot;&quot;,&quot;height&quot;:&quot;&quot;},&quot;allowCalculateOverride&quot;:false,&quot;encrypted&quot;:false,&quot;alwaysEnabled&quot;:false,&quot;showCharCount&quot;:false,&quot;showWordCount&quot;:false,&quot;properties&quot;:{},&quot;allowMultipleMasks&quot;:false,&quot;type&quot;:&quot;label&quot;,&quot;attrs&quot;:[],&quot;id&quot;:&quot;eppj6t4&quot;},{&quot;label&quot;:&quot;Customer Name&quot;,&quot;labelPosition&quot;:&quot;top&quot;,&quot;placeholder&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;prefix&quot;:&quot;&quot;,&quot;suffix&quot;:&quot;&quot;,&quot;widget&quot;:{&quot;type&quot;:&quot;input&quot;},&quot;inputMask&quot;:&quot;&quot;,&quot;hidden&quot;:false,&quot;hideLabel&quot;:false,&quot;showWordCount&quot;:false,&quot;showCharCount&quot;:false,&quot;disabled&quot;:true,&quot;alwaysEnabled&quot;:false,&quot;tableView&quot;:true,&quot;defaultValue&quot;:null,&quot;validateOn&quot;:&quot;change&quot;,&quot;validate&quot;:{&quot;required&quot;:false,&quot;pattern&quot;:&quot;&quot;,&quot;customMessage&quot;:&quot;&quot;,&quot;minLength&quot;:&quot;&quot;,&quot;maxLength&quot;:&quot;&quot;,&quot;custom&quot;:&quot;&quot;,&quot;customPrivate&quot;:false,&quot;strictDateValidation&quot;:false},&quot;errorLabel&quot;:&quot;&quot;,&quot;key&quot;:&quot;in_CustomerName&quot;,&quot;conditional&quot;:{&quot;show&quot;:null,&quot;when&quot;:null,&quot;eq&quot;:&quot;&quot;},&quot;type&quot;:&quot;textfield&quot;,&quot;input&quot;:true,&quot;customClass&quot;:&quot;&quot;,&quot;multiple&quot;:false,&quot;protected&quot;:false,&quot;unique&quot;:false,&quot;persistent&quot;:true,&quot;clearOnHide&quot;:true,&quot;refreshOn&quot;:&quot;&quot;,&quot;redrawOn&quot;:&quot;&quot;,&quot;tooltip&quot;:&quot;&quot;,&quot;tabindex&quot;:&quot;&quot;,&quot;autofocus&quot;:false,&quot;dbIndex&quot;:false,&quot;customDefaultValue&quot;:&quot;&quot;,&quot;calculateValue&quot;:&quot;&quot;,&quot;attributes&quot;:{},&quot;overlay&quot;:{&quot;style&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;top&quot;:&quot;&quot;,&quot;width&quot;:&quot;&quot;,&quot;height&quot;:&quot;&quot;},&quot;allowCalculateOverride&quot;:false,&quot;encrypted&quot;:false,&quot;properties&quot;:{},&quot;allowMultipleMasks&quot;:false,&quot;mask&quot;:false,&quot;inputType&quot;:&quot;text&quot;,&quot;inputFormat&quot;:&quot;plain&quot;,&quot;id&quot;:&quot;e3eqt0j&quot;},{&quot;label&quot;:&quot;Email&quot;,&quot;labelPosition&quot;:&quot;top&quot;,&quot;placeholder&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;prefix&quot;:&quot;&quot;,&quot;suffix&quot;:&quot;&quot;,&quot;widget&quot;:{&quot;type&quot;:&quot;input&quot;},&quot;hidden&quot;:false,&quot;hideLabel&quot;:false,&quot;disabled&quot;:true,&quot;alwaysEnabled&quot;:false,&quot;tableView&quot;:true,&quot;defaultValue&quot;:&quot;&quot;,&quot;validateOn&quot;:&quot;change&quot;,&quot;validate&quot;:{&quot;required&quot;:false,&quot;pattern&quot;:&quot;&quot;,&quot;customMessage&quot;:&quot;&quot;,&quot;minLength&quot;:&quot;&quot;,&quot;maxLength&quot;:&quot;&quot;,&quot;custom&quot;:&quot;&quot;,&quot;customPrivate&quot;:false,&quot;strictDateValidation&quot;:false},&quot;errorLabel&quot;:&quot;&quot;,&quot;key&quot;:&quot;in_EmailAddress&quot;,&quot;conditional&quot;:{&quot;show&quot;:null,&quot;when&quot;:null,&quot;eq&quot;:&quot;&quot;},&quot;type&quot;:&quot;email&quot;,&quot;input&quot;:true,&quot;customClass&quot;:&quot;&quot;,&quot;multiple&quot;:false,&quot;protected&quot;:false,&quot;unique&quot;:false,&quot;persistent&quot;:true,&quot;clearOnHide&quot;:true,&quot;refreshOn&quot;:&quot;&quot;,&quot;redrawOn&quot;:&quot;&quot;,&quot;tooltip&quot;:&quot;&quot;,&quot;tabindex&quot;:&quot;&quot;,&quot;autofocus&quot;:false,&quot;dbIndex&quot;:false,&quot;customDefaultValue&quot;:&quot;&quot;,&quot;calculateValue&quot;:&quot;&quot;,&quot;attributes&quot;:{},&quot;overlay&quot;:{&quot;style&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;top&quot;:&quot;&quot;,&quot;width&quot;:&quot;&quot;,&quot;height&quot;:&quot;&quot;},&quot;allowCalculateOverride&quot;:false,&quot;encrypted&quot;:false,&quot;showCharCount&quot;:false,&quot;showWordCount&quot;:false,&quot;properties&quot;:{},&quot;allowMultipleMasks&quot;:false,&quot;mask&quot;:false,&quot;inputType&quot;:&quot;email&quot;,&quot;inputFormat&quot;:&quot;plain&quot;,&quot;inputMask&quot;:&quot;&quot;,&quot;kickbox&quot;:{&quot;enabled&quot;:false},&quot;id&quot;:&quot;ecvgnms&quot;},{&quot;label&quot;:&quot;Phone Number&quot;,&quot;labelPosition&quot;:&quot;top&quot;,&quot;placeholder&quot;:&quot;&quot;,&quot;description&quot;:&quot;&quot;,&quot;prefix&quot;:&quot;&quot;,&quot;suffix&quot;:&quot;&quot;,&quot;widget&quot;:{&quot;type&quot;:&quot;input&quot;},&quot;inputMask&quot;:&quot;&quot;,&quot;hidden&quot;:false,&quot;hideLabel&quot;:false,&quot;showWordCount&quot;:false,&quot;showCharCount&quot;:false,&quot;disabled&quot;:true,&quot;alwaysEnabled&quot;:false,&quot;tableView&quot;:true,&quot;defaultValue&quot;:null,&quot;validateOn&quot;:&quot;change&quot;,&quot;validate&quot;:{&quot;required&quot;:false,&quot;pattern&quot;:&quot;&quot;,&quot;customMessage&quot;:&quot;&quot;,&quot;minLength&quot;:&quot;&quot;,&quot;maxLength&quot;:&quot;&quot;,&quot;custom&quot;:&quot;&quot;,&quot;customPrivate&quot;:false,&quot;strictDateValidation&quot;:false},&quot;errorLabel&quot;:&quot;&quot;,&quot;key&quot;:&quot;in_PhoneNumber&quot;,&quot;conditional&quot;:{&quot;show&quot;:null,&quot;when&quot;:null,&quot;eq&quot;:&quot;&quot;},&quot;type&quot;:&quot;textfield&quot;,&quot;input&quot;:true,&quot;customClass&quot;:&quot;&quot;,&quot;multiple&quot;:false,&quot;protected&quot;:false,&quot;unique&quot;:false,&quot;persistent&quot;:true,&quot;clearOnHide&quot;:true,&quot;refreshOn&quot;:&quot;&quot;,&quot;redrawOn&quot;:&quot;&quot;,&quot;tooltip&quot;:&quot;&quot;,&quot;tabindex&quot;:&quot;&quot;,&quot;autofocus&quot;:false,&quot;dbIndex&quot;:false,&quot;customDefaultValue&quot;:&quot;&quot;,&quot;calculateValue&quot;:&quot;&quot;,&quot;attributes&quot;:{},&quot;overlay&quot;:{&quot;style&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;top&quot;:&quot;&quot;,&quot;width&quot;:&quot;&quot;,&quot;height&quot;:&quot;&quot;},&quot;allowCalculateOverride&quot;:false,&quot;encrypted&quot;:false,&quot;properties&quot;:{},&quot;allowMultipleMasks&quot;:false,&quot;mask&quot;:false,&quot;inputType&quot;:&quot;text&quot;,&quot;inputFormat&quot;:&quot;plain&quot;,&quot;id&quot;:&quot;ejqj8ot&quot;},{&quot;label&quot;:&quot;Postcode&quot;,&quot;labelPosition&quot;:&quot;top&quot;,&quot;placeholder&quot;:&quot;Postcode&quot;,&quot;description&quot;:&quot;Please enter valid postcode here&quot;,&quot;prefix&quot;:&quot;&quot;,&quot;suffix&quot;:&quot;&quot;,&quot;widget&quot;:{&quot;type&quot;:&quot;input&quot;},&quot;inputMask&quot;:&quot;&quot;,&quot;hidden&quot;:false,&quot;hideLabel&quot;:false,&quot;showWordCount&quot;:false,&quot;showCharCount&quot;:false,&quot;disabled&quot;:false,&quot;alwaysEnabled&quot;:false,&quot;tableView&quot;:true,&quot;defaultValue&quot;:null,&quot;validateOn&quot;:&quot;change&quot;,&quot;validate&quot;:{&quot;required&quot;:false,&quot;pattern&quot;:&quot;&quot;,&quot;customMessage&quot;:&quot;&quot;,&quot;minLength&quot;:&quot;&quot;,&quot;maxLength&quot;:&quot;&quot;,&quot;custom&quot;:&quot;&quot;,&quot;customPrivate&quot;:false,&quot;strictDateValidation&quot;:false},&quot;errorLabel&quot;:&quot;&quot;,&quot;key&quot;:&quot;inputPostcode&quot;,&quot;conditional&quot;:{&quot;show&quot;:null,&quot;when&quot;:null,&quot;eq&quot;:&quot;&quot;},&quot;type&quot;:&quot;textfield&quot;,&quot;input&quot;:true,&quot;customClass&quot;:&quot;&quot;,&quot;multiple&quot;:false,&quot;protected&quot;:false,&quot;unique&quot;:false,&quot;persistent&quot;:true,&quot;clearOnHide&quot;:true,&quot;refreshOn&quot;:&quot;&quot;,&quot;redrawOn&quot;:&quot;&quot;,&quot;tooltip&quot;:&quot;&quot;,&quot;tabindex&quot;:&quot;&quot;,&quot;autofocus&quot;:false,&quot;dbIndex&quot;:false,&quot;customDefaultValue&quot;:&quot;&quot;,&quot;calculateValue&quot;:&quot;&quot;,&quot;attributes&quot;:{},&quot;overlay&quot;:{&quot;style&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;top&quot;:&quot;&quot;,&quot;width&quot;:&quot;&quot;,&quot;height&quot;:&quot;&quot;},&quot;allowCalculateOverride&quot;:false,&quot;encrypted&quot;:false,&quot;properties&quot;:{},&quot;allowMultipleMasks&quot;:false,&quot;mask&quot;:false,&quot;inputType&quot;:&quot;text&quot;,&quot;inputFormat&quot;:&quot;plain&quot;,&quot;id&quot;:&quot;eh7msnq&quot;},{&quot;label&quot;:&quot;Address&quot;,&quot;labelPosition&quot;:&quot;top&quot;,&quot;placeholder&quot;:&quot;Address&quot;,&quot;description&quot;:&quot;Please enter a valid address&quot;,&quot;prefix&quot;:&quot;&quot;,&quot;suffix&quot;:&quot;&quot;,&quot;widget&quot;:{&quot;type&quot;:&quot;input&quot;},&quot;inputMask&quot;:&quot;&quot;,&quot;hidden&quot;:false,&quot;hideLabel&quot;:false,&quot;showWordCount&quot;:false,&quot;showCharCount&quot;:false,&quot;disabled&quot;:false,&quot;alwaysEnabled&quot;:false,&quot;tableView&quot;:true,&quot;defaultValue&quot;:null,&quot;validateOn&quot;:&quot;change&quot;,&quot;validate&quot;:{&quot;required&quot;:false,&quot;pattern&quot;:&quot;&quot;,&quot;customMessage&quot;:&quot;&quot;,&quot;minLength&quot;:&quot;&quot;,&quot;maxLength&quot;:&quot;&quot;,&quot;custom&quot;:&quot;&quot;,&quot;customPrivate&quot;:false,&quot;strictDateValidation&quot;:false},&quot;errorLabel&quot;:&quot;&quot;,&quot;key&quot;:&quot;inputAddress&quot;,&quot;conditional&quot;:{&quot;show&quot;:null,&quot;when&quot;:null,&quot;eq&quot;:&quot;&quot;},&quot;type&quot;:&quot;textfield&quot;,&quot;input&quot;:true,&quot;customClass&quot;:&quot;&quot;,&quot;multiple&quot;:false,&quot;protected&quot;:false,&quot;unique&quot;:false,&quot;persistent&quot;:true,&quot;clearOnHide&quot;:true,&quot;refreshOn&quot;:&quot;&quot;,&quot;redrawOn&quot;:&quot;&quot;,&quot;tooltip&quot;:&quot;&quot;,&quot;tabindex&quot;:&quot;&quot;,&quot;autofocus&quot;:false,&quot;dbIndex&quot;:false,&quot;customDefaultValue&quot;:&quot;&quot;,&quot;calculateValue&quot;:&quot;&quot;,&quot;attributes&quot;:{},&quot;overlay&quot;:{&quot;style&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;top&quot;:&quot;&quot;,&quot;width&quot;:&quot;&quot;,&quot;height&quot;:&quot;&quot;},&quot;allowCalculateOverride&quot;:false,&quot;encrypted&quot;:false,&quot;properties&quot;:{},&quot;allowMultipleMasks&quot;:false,&quot;mask&quot;:false,&quot;inputType&quot;:&quot;text&quot;,&quot;inputFormat&quot;:&quot;plain&quot;,&quot;id&quot;:&quot;ew98o0q&quot;},{&quot;label&quot;:&quot;Submit&quot;,&quot;showValidations&quot;:false,&quot;theme&quot;:&quot;primary&quot;,&quot;size&quot;:&quot;md&quot;,&quot;block&quot;:false,&quot;leftIcon&quot;:&quot;&quot;,&quot;rightIcon&quot;:&quot;&quot;,&quot;disableOnInvalid&quot;:false,&quot;hidden&quot;:false,&quot;disabled&quot;:false,&quot;alwaysEnabled&quot;:false,&quot;tableView&quot;:false,&quot;key&quot;:&quot;submit&quot;,&quot;properties&quot;:{},&quot;conditional&quot;:{&quot;show&quot;:null,&quot;when&quot;:null,&quot;eq&quot;:&quot;&quot;},&quot;type&quot;:&quot;button&quot;,&quot;action&quot;:&quot;submit&quot;,&quot;input&quot;:true,&quot;placeholder&quot;:&quot;&quot;,&quot;prefix&quot;:&quot;&quot;,&quot;customClass&quot;:&quot;&quot;,&quot;suffix&quot;:&quot;&quot;,&quot;multiple&quot;:false,&quot;defaultValue&quot;:null,&quot;protected&quot;:false,&quot;unique&quot;:false,&quot;persistent&quot;:false,&quot;clearOnHide&quot;:true,&quot;refreshOn&quot;:&quot;&quot;,&quot;redrawOn&quot;:&quot;&quot;,&quot;labelPosition&quot;:&quot;top&quot;,&quot;description&quot;:&quot;&quot;,&quot;errorLabel&quot;:&quot;&quot;,&quot;tooltip&quot;:&quot;&quot;,&quot;hideLabel&quot;:false,&quot;tabindex&quot;:&quot;&quot;,&quot;autofocus&quot;:false,&quot;dbIndex&quot;:false,&quot;customDefaultValue&quot;:&quot;&quot;,&quot;calculateValue&quot;:&quot;&quot;,&quot;widget&quot;:{&quot;type&quot;:&quot;input&quot;},&quot;attributes&quot;:{},&quot;validateOn&quot;:&quot;change&quot;,&quot;validate&quot;:{&quot;required&quot;:false,&quot;custom&quot;:&quot;&quot;,&quot;customPrivate&quot;:false,&quot;strictDateValidation&quot;:false},&quot;overlay&quot;:{&quot;style&quot;:&quot;&quot;,&quot;left&quot;:&quot;&quot;,&quot;top&quot;:&quot;&quot;,&quot;width&quot;:&quot;&quot;,&quot;height&quot;:&quot;&quot;},&quot;allowCalculateOverride&quot;:false,&quot;encrypted&quot;:false,&quot;showCharCount&quot;:false,&quot;showWordCount&quot;:false,&quot;allowMultipleMasks&quot;:false,&quot;dataGridLabel&quot;:true,&quot;id&quot;:&quot;e8yn35&quot;}]" FormTheme="{}{&quot;Activities&quot;:[&quot;FORMS&quot;],&quot;Id&quot;:&quot;100120&quot;,&quot;Name&quot;:&quot;Default&quot;,&quot;BaseCss&quot;:&quot;../../assets/css/themes/uipath.bootstrap.min.css&quot;,&quot;ImageSrc&quot;:&quot;../../assets/themeicons/uipath.png&quot;,&quot;OverrideCssUrl&quot;:&quot;../../assets/css/themes/uipath.custom.css&quot;,&quot;UserStyleOverrides&quot;:&quot;&quot;,&quot;Properties&quot;:&quot;&quot;,&quot;IsCustomTheme&quot;:false,&quot;Version&quot;:1,&quot;ThemeVersion&quot;:1}" FormWidth="800" GenerateInputFields="False" sap:VirtualizedContainerService.HintSize="334,210" sap2010:WorkflowViewState.IdRef="FormActivity_2" IsReadOnly="False" MaxColumnsForSchemaGeneration="6" RunDoBlockFirst="False" RunInIsolatedMode="False">
+                  <ufa:FormActivity.Body>
+                    <ActivityAction x:TypeArguments="scg:Dictionary(x:String, x:Object)">
+                      <Sequence sap:VirtualizedContainerService.HintSize="200,84" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </Sequence>
+                    </ActivityAction>
+                  </ufa:FormActivity.Body>
+                  <ufa:FormActivity.DelayBody>
+                    <ActivityAction x:TypeArguments="scg:Dictionary(x:String, x:Object)">
+                      <Delay Duration="00:00:00.2500000" sap2010:WorkflowViewState.IdRef="Delay_2" />
+                    </ActivityAction>
+                  </ufa:FormActivity.DelayBody>
+                  <ufa:FormActivity.FormFieldsCollection>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_EmailAddress">[in_EmailAddress]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_PhoneNumber">[in_PhoneNumber]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_CustomerName">[in_CustomerName]</InArgument>
+                  </ufa:FormActivity.FormFieldsCollection>
+                </ufa:FormActivity>
+                <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="334,61.3333333333333" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_1" JsonObject="[jsonFormResponse]" JsonString="[formResponse]" />
+                <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke PostcodeChecker workflow" sap:VirtualizedContainerService.HintSize="334,86.6666666666667" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Validation\PostcodeChecker.xaml">
+                  <ui:InvokeWorkflowFile.Arguments>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_Address">[jsonFormResponse.getValue("inputAddress").ToString]</InArgument>
+                    <InArgument x:TypeArguments="x:String" x:Key="in_Postcode">[jsonFormResponse.getValue("inputPostcode").ToString]</InArgument>
+                    <OutArgument x:TypeArguments="x:Boolean" x:Key="out_Result">[validPostcode]</OutArgument>
+                    <OutArgument x:TypeArguments="njl:JObject" x:Key="out_Response">[jsonPlacesResponse]</OutArgument>
+                  </ui:InvokeWorkflowFile.Arguments>
+                </ui:InvokeWorkflowFile>
+              </Sequence>
+            </While>
+            <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="484,62" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[jsonPlacesResponse.ToString]" />
+            <Assign sap:VirtualizedContainerService.HintSize="484,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[formattedAddress]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[jsonPlacesResponse.GetValue("candidates").ElementAt(0).SelectToken("formatted_address").ToString]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="484,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[formattedAddress]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[formattedAddress.Substring(formattedAddress.IndexOf(" BT"))]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="484,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_3">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[io_Postcode]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[formattedAddress.Remove(formattedAddress.IndexOf(", "))]</InArgument>
+              </Assign.Value>
+            </Assign>
+          </Sequence>
+        </If.Else>
+      </If>
+      <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="672,62" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="[io_Postcode]" />
+    </Sequence>
+  </Sequence>
+</Activity>

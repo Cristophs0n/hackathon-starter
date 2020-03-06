@@ -2,23 +2,34 @@
   "Packages": [
     {
       "Package": {
+        "Id": "RestSharp",
+        "Version": "106.10.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\restsharp/106.10.0\\lib/net452/RestSharp.dll"
+      ],
+      "Path": "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\restsharp/106.10.0"
+    },
+    {
+      "Package": {
         "Id": "UiPath.Excel.Activities",
         "Version": "2.7.2"
       },
       "Assemblies": [
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\closedxml/0.87.1\\lib/net40/ClosedXML.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\csvhelper/2.13.5\\lib/net40-client/CsvHelper.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\documentformat.openxml/2.5.0\\lib/DocumentFormat.OpenXml.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\microsoft.visualstudio.ole.interop/7.10.6071\\lib/Microsoft.VisualStudio.OLE.Interop.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OOXML.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OpenXml4Net.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OpenXmlFormats.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\sharpziplib/1.0.0\\lib/net45/ICSharpCode.SharpZipLib.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.excel.activities/2.7.2\\lib/net461/UiPath.Excel.Activities.Design.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.excel.activities/2.7.2\\lib/net461/UiPath.Excel.Activities.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.excel.activities/2.7.2\\lib/net461/UiPath.Excel.dll"
-      ]
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\closedxml/0.87.1\\lib/net40/ClosedXML.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\csvhelper/2.13.5\\lib/net40-client/CsvHelper.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\documentformat.openxml/2.5.0\\lib/DocumentFormat.OpenXml.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\microsoft.visualstudio.ole.interop/7.10.6071\\lib/Microsoft.VisualStudio.OLE.Interop.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OOXML.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OpenXml4Net.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.OpenXmlFormats.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\npoi/2.4.1\\lib/net45/NPOI.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\sharpziplib/1.0.0\\lib/net45/ICSharpCode.SharpZipLib.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.excel.activities/2.7.2\\lib/net461/UiPath.Excel.Activities.Design.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.excel.activities/2.7.2\\lib/net461/UiPath.Excel.Activities.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.excel.activities/2.7.2\\lib/net461/UiPath.Excel.dll"
+      ],
+      "Path": "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.excel.activities/2.7.2"
     },
     {
       "Package": {
@@ -26,23 +37,24 @@
         "Version": "19.10.1"
       },
       "Assemblies": [
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\csvhelper/2.13.5\\lib/net40-client/CsvHelper.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\microsoft.aspnet.signalr.client/2.4.0\\lib/net45/Microsoft.AspNet.SignalR.Client.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\microsoft.rest.clientruntime/2.3.20\\lib/net461/Microsoft.Rest.ClientRuntime.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.system.activities/19.10.1\\lib/net461/ActiproSoftware.Docking.Wpf.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.system.activities/19.10.1\\lib/net461/ActiproSoftware.Ribbon.Wpf.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.system.activities/19.10.1\\lib/net461/ActiproSoftware.Shared.Wpf.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.system.activities/19.10.1\\lib/net461/ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.system.activities/19.10.1\\lib/net461/ActiproSoftware.SyntaxEditor.Wpf.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.system.activities/19.10.1\\lib/net461/ActiproSoftware.Text.Addons.DotNet.Wpf.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.system.activities/19.10.1\\lib/net461/ActiproSoftware.Text.LLParser.Wpf.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.system.activities/19.10.1\\lib/net461/ActiproSoftware.Text.Wpf.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.system.activities/19.10.1\\lib/net461/ActiproSoftware.Wizard.Wpf.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.system.activities/19.10.1\\lib/net461/UiPath.OrchestratorClient.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.system.activities/19.10.1\\lib/net461/UiPath.System.Activities.Design.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.system.activities/19.10.1\\lib/net461/UiPath.System.Activities.dll"
-      ]
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\csvhelper/2.13.5\\lib/net40-client/CsvHelper.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\microsoft.aspnet.signalr.client/2.4.0\\lib/net45/Microsoft.AspNet.SignalR.Client.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\microsoft.rest.clientruntime/2.3.20\\lib/net461/Microsoft.Rest.ClientRuntime.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.system.activities/19.10.1\\lib/net461/ActiproSoftware.Docking.Wpf.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.system.activities/19.10.1\\lib/net461/ActiproSoftware.Ribbon.Wpf.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.system.activities/19.10.1\\lib/net461/ActiproSoftware.Shared.Wpf.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.system.activities/19.10.1\\lib/net461/ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.system.activities/19.10.1\\lib/net461/ActiproSoftware.SyntaxEditor.Wpf.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.system.activities/19.10.1\\lib/net461/ActiproSoftware.Text.Addons.DotNet.Wpf.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.system.activities/19.10.1\\lib/net461/ActiproSoftware.Text.LLParser.Wpf.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.system.activities/19.10.1\\lib/net461/ActiproSoftware.Text.Wpf.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.system.activities/19.10.1\\lib/net461/ActiproSoftware.Wizard.Wpf.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.system.activities/19.10.1\\lib/net461/UiPath.OrchestratorClient.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.system.activities/19.10.1\\lib/net461/UiPath.System.Activities.Design.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.system.activities/19.10.1\\lib/net461/UiPath.System.Activities.dll"
+      ],
+      "Path": "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.system.activities/19.10.1"
     },
     {
       "Package": {
@@ -50,42 +62,99 @@
         "Version": "19.11.1"
       },
       "Assemblies": [
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\avalonedit/5.0.3\\lib/Net40/ICSharpCode.AvalonEdit.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.DataGrid.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.Toolkit.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\humanizer.core/2.4.2\\lib/netstandard2.0/Humanizer.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath/19.10.7312.25504\\lib/UiPath.Interop.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.ocr.contracts/2.2.1\\lib/net45/UiPath.OCR.Contracts.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.uiautomation.activities/19.11.1\\lib/net461/ActiproSoftware.DataGrid.Contrib.Wpf.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.uiautomation.activities/19.11.1\\lib/net461/ActiproSoftware.Docking.Wpf.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.uiautomation.activities/19.11.1\\lib/net461/ActiproSoftware.Editors.Wpf.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.uiautomation.activities/19.11.1\\lib/net461/ActiproSoftware.Ribbon.Wpf.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.uiautomation.activities/19.11.1\\lib/net461/ActiproSoftware.Shared.Wpf.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.uiautomation.activities/19.11.1\\lib/net461/ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.uiautomation.activities/19.11.1\\lib/net461/ActiproSoftware.SyntaxEditor.Wpf.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.uiautomation.activities/19.11.1\\lib/net461/ActiproSoftware.Text.Addons.DotNet.Wpf.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.uiautomation.activities/19.11.1\\lib/net461/ActiproSoftware.Text.LLParser.Wpf.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.uiautomation.activities/19.11.1\\lib/net461/ActiproSoftware.Text.Wpf.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.uiautomation.activities/19.11.1\\lib/net461/ActiproSoftware.Wizard.Wpf.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.uiautomation.activities/19.11.1\\lib/net461/UiPath.CV.Activities.Design.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.uiautomation.activities/19.11.1\\lib/net461/UiPath.CV.Activities.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.uiautomation.activities/19.11.1\\lib/net461/UiPath.CV.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.uiautomation.activities/19.11.1\\lib/net461/UiPath.UIAutomation.Activities.Design.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.uiautomation.activities/19.11.1\\lib/net461/UiPath.UiAutomation.Activities.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.uiautomation.activities/19.11.1\\lib/net461/UiPath.Wizards.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.vision/2.0.0\\lib/net452/UiPath.Vision.AzureComputerVision.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.vision/2.0.0\\lib/net452/UiPath.Vision.Core.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.vision/2.0.0\\lib/net452/UiPath.Vision.GoogleCloud.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.vision/2.0.0\\lib/net452/UiPath.Vision.Microsoft.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.vision/2.0.0\\lib/net452/UiPath.Vision.MicrosoftCloud.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.vision/2.0.0\\lib/net452/UiPath.Vision.Tesseract.dll",
-        "C:\\Users\\cbrennan020\\.nuget\\packages\\uipath.vision/2.0.0\\lib/net452/UiPath.Vision.dll"
-      ]
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\avalonedit/5.0.3\\lib/Net40/ICSharpCode.AvalonEdit.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.AvalonDock.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.DataGrid.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\extended.wpf.toolkit/2.8.0\\lib/net40/Xceed.Wpf.Toolkit.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\humanizer.core/2.4.2\\lib/netstandard2.0/Humanizer.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath/19.10.7312.25504\\lib/UiPath.Interop.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.ocr.contracts/2.2.1\\lib/net45/UiPath.OCR.Contracts.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.uiautomation.activities/19.11.1\\lib/net461/ActiproSoftware.DataGrid.Contrib.Wpf.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.uiautomation.activities/19.11.1\\lib/net461/ActiproSoftware.Docking.Wpf.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.uiautomation.activities/19.11.1\\lib/net461/ActiproSoftware.Editors.Wpf.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.uiautomation.activities/19.11.1\\lib/net461/ActiproSoftware.Ribbon.Wpf.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.uiautomation.activities/19.11.1\\lib/net461/ActiproSoftware.Shared.Wpf.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.uiautomation.activities/19.11.1\\lib/net461/ActiproSoftware.SyntaxEditor.Addons.DotNet.Wpf.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.uiautomation.activities/19.11.1\\lib/net461/ActiproSoftware.SyntaxEditor.Wpf.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.uiautomation.activities/19.11.1\\lib/net461/ActiproSoftware.Text.Addons.DotNet.Wpf.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.uiautomation.activities/19.11.1\\lib/net461/ActiproSoftware.Text.LLParser.Wpf.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.uiautomation.activities/19.11.1\\lib/net461/ActiproSoftware.Text.Wpf.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.uiautomation.activities/19.11.1\\lib/net461/ActiproSoftware.Wizard.Wpf.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.uiautomation.activities/19.11.1\\lib/net461/UiPath.CV.Activities.Design.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.uiautomation.activities/19.11.1\\lib/net461/UiPath.CV.Activities.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.uiautomation.activities/19.11.1\\lib/net461/UiPath.CV.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.uiautomation.activities/19.11.1\\lib/net461/UiPath.UIAutomation.Activities.Design.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.uiautomation.activities/19.11.1\\lib/net461/UiPath.UiAutomation.Activities.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.uiautomation.activities/19.11.1\\lib/net461/UiPath.Wizards.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.vision/2.0.0\\lib/net452/UiPath.Vision.AzureComputerVision.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.vision/2.0.0\\lib/net452/UiPath.Vision.Core.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.vision/2.0.0\\lib/net452/UiPath.Vision.GoogleCloud.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.vision/2.0.0\\lib/net452/UiPath.Vision.Microsoft.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.vision/2.0.0\\lib/net452/UiPath.Vision.MicrosoftCloud.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.vision/2.0.0\\lib/net452/UiPath.Vision.Tesseract.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.vision/2.0.0\\lib/net452/UiPath.Vision.dll"
+      ],
+      "Path": "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.uiautomation.activities/19.11.1"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.WebAPI.Activities",
+        "Version": "1.4.4"
+      },
+      "Assemblies": [
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\avalonedit/5.0.3\\lib/Net40/ICSharpCode.AvalonEdit.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\restsharp/106.10.0\\lib/net452/RestSharp.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.webapi.activities/1.4.4\\lib/net452/UiPath.Web.Activities.Design.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.webapi.activities/1.4.4\\lib/net452/UiPath.Web.Activities.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.webapi.activities/1.4.4\\lib/net452/UiPath.Web.dll"
+      ],
+      "Path": "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.webapi.activities/1.4.4"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Form.Activities",
+        "Version": "1.1.0-preview"
+      },
+      "Assemblies": [
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\castle.core/4.3.1\\lib/net45/Castle.Core.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\system.runtime.compilerservices.unsafe/4.5.2\\lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\system.threading.tasks.extensions/4.5.1\\lib/netstandard2.0/System.Threading.Tasks.Extensions.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.cefsharpbundle/1.1.1\\lib/net452/CefSharp.BrowserSubprocess.Core.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.cefsharpbundle/1.1.1\\lib/net452/CefSharp.Core.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.cefsharpbundle/1.1.1\\lib/net452/CefSharp.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.cefsharpbundle/1.1.1\\lib/net452/CefSharp.Wpf.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.cefsharpbundle/1.1.1\\lib/net452/chrome_elf.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.cefsharpbundle/1.1.1\\lib/net452/d3dcompiler_47.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.cefsharpbundle/1.1.1\\lib/net452/libcef.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.cefsharpbundle/1.1.1\\lib/net452/libEGL.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.cefsharpbundle/1.1.1\\lib/net452/libGLESv2.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.cefsharpbundle/1.1.1\\lib/net452/msvcp140.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.cefsharpbundle/1.1.1\\lib/net452/UiPath.CEFSharpBundle.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.cefsharpbundle/1.1.1\\lib/net452/vcruntime140.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.cefsharpbundle/1.1.1\\lib/net452/swiftshader/libEGL.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.cefsharpbundle/1.1.1\\lib/net452/swiftshader/libGLESv2.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.form.activities/1.1.0-preview\\lib/net461/UiPath.Callout.Activity.Design.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.form.activities/1.1.0-preview\\lib/net461/UiPath.Callout.Activity.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.form.activities/1.1.0-preview\\lib/net461/UiPath.Callout.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.form.activities/1.1.0-preview\\lib/net461/UiPath.Form.Activities.Design.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.form.activities/1.1.0-preview\\lib/net461/UiPath.Form.Activities.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.form.activities/1.1.0-preview\\lib/net461/UiPath.Form.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.form.activities/1.1.0-preview\\lib/net461/UiPath.Form.Host.Local.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.form.activities/1.1.0-preview\\lib/net461/UiPath.OutOfProcessUi.Common.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.formactivitylibrary/1.1.0-preview\\lib/net461/UiPath.Form.ActivityLibrary.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.formactivitylibrary/1.1.0-preview\\lib/net461/UiPath.Form.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.formactivitylibrary/1.1.0-preview\\lib/net461/UiPath.Form.Host.Local.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.formactivitylibrary/1.1.0-preview\\lib/net461/UiPath.OutOfProcessUi.Common.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.formactivitylibrary.contracts/1.1.0-preview\\lib/net461/UiPath.Form.ActivityLibrary.Contracts.dll"
+      ],
+      "Path": "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.form.activities/1.1.0-preview"
     }
   ],
   "Conflicts": [],
@@ -93,6 +162,11 @@
     "AvalonEdit": {
       "Id": "AvalonEdit",
       "Version": "5.0.3",
+      "Dependencies": []
+    },
+    "Castle.Core": {
+      "Id": "Castle.Core",
+      "Version": "4.3.1",
       "Dependencies": []
     },
     "ClosedXML": {
@@ -165,14 +239,44 @@
         }
       ]
     },
+    "RestSharp": {
+      "Id": "RestSharp",
+      "Version": "106.10.0",
+      "Dependencies": []
+    },
     "SharpZipLib": {
       "Id": "SharpZipLib",
       "Version": "1.0.0",
       "Dependencies": []
     },
+    "System.Runtime.CompilerServices.Unsafe": {
+      "Id": "System.Runtime.CompilerServices.Unsafe",
+      "Version": "4.5.2",
+      "Dependencies": []
+    },
+    "System.Threading.Tasks.Extensions": {
+      "Id": "System.Threading.Tasks.Extensions",
+      "Version": "4.5.1",
+      "Dependencies": [
+        {
+          "Item1": "System.Runtime.CompilerServices.Unsafe",
+          "Item2": "[4.5.0, )"
+        }
+      ]
+    },
+    "System.ValueTuple": {
+      "Id": "System.ValueTuple",
+      "Version": "4.5.0",
+      "Dependencies": []
+    },
     "UiPath": {
       "Id": "UiPath",
       "Version": "19.10.7312.25504",
+      "Dependencies": []
+    },
+    "UiPath.CefSharpBundle": {
+      "Id": "UiPath.CefSharpBundle",
+      "Version": "1.1.1",
       "Dependencies": []
     },
     "UiPath.Excel.Activities": {
@@ -204,6 +308,75 @@
           "Item2": "[1.0.0, )"
         }
       ]
+    },
+    "UiPath.Form.Activities": {
+      "Id": "UiPath.Form.Activities",
+      "Version": "1.1.0-preview",
+      "Dependencies": [
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[11.0.2, )"
+        },
+        {
+          "Item1": "System.Runtime.CompilerServices.Unsafe",
+          "Item2": "[4.5.2, )"
+        },
+        {
+          "Item1": "System.ValueTuple",
+          "Item2": "[4.5.0, )"
+        },
+        {
+          "Item1": "UiPath.CefSharpBundle",
+          "Item2": "[1.1.1, )"
+        },
+        {
+          "Item1": "Castle.Core",
+          "Item2": "[4.3.1, )"
+        },
+        {
+          "Item1": "System.Threading.Tasks.Extensions",
+          "Item2": "[4.5.1, )"
+        },
+        {
+          "Item1": "UiPath.FormActivityLibrary.Contracts",
+          "Item2": "[1.1.0-preview, )"
+        },
+        {
+          "Item1": "UiPath.FormActivityLibrary",
+          "Item2": "[1.1.0-preview, )"
+        }
+      ]
+    },
+    "UiPath.FormActivityLibrary": {
+      "Id": "UiPath.FormActivityLibrary",
+      "Version": "1.1.0-preview",
+      "Dependencies": [
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[11.0.2, )"
+        },
+        {
+          "Item1": "System.Runtime.CompilerServices.Unsafe",
+          "Item2": "[4.5.2, )"
+        },
+        {
+          "Item1": "System.ValueTuple",
+          "Item2": "[4.5.0, )"
+        },
+        {
+          "Item1": "UiPath.CefSharpBundle",
+          "Item2": "[1.1.1, )"
+        },
+        {
+          "Item1": "UiPath.FormActivityLibrary.Contracts",
+          "Item2": "[1.1.0-preview, )"
+        }
+      ]
+    },
+    "UiPath.FormActivityLibrary.Contracts": {
+      "Id": "UiPath.FormActivityLibrary.Contracts",
+      "Version": "1.1.0-preview",
+      "Dependencies": []
     },
     "UiPath.OCR.Contracts": {
       "Id": "UiPath.OCR.Contracts",
@@ -273,6 +446,24 @@
         {
           "Item1": "UiPath.OCR.Contracts",
           "Item2": "[2.2.1, )"
+        }
+      ]
+    },
+    "UiPath.WebAPI.Activities": {
+      "Id": "UiPath.WebAPI.Activities",
+      "Version": "1.4.4",
+      "Dependencies": [
+        {
+          "Item1": "AvalonEdit",
+          "Item2": "[5.0.3, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[11.0.2, )"
+        },
+        {
+          "Item1": "RestSharp",
+          "Item2": "[106.3.1, )"
         }
       ]
     }
