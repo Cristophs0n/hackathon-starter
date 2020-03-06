@@ -2,6 +2,16 @@
   "Packages": [
     {
       "Package": {
+        "Id": "RestSharp",
+        "Version": "106.10.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\restsharp/106.10.0\\lib/net452/RestSharp.dll"
+      ],
+      "Path": "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\restsharp/106.10.0"
+    },
+    {
+      "Package": {
         "Id": "UiPath.Excel.Activities",
         "Version": "2.7.2"
       },
@@ -92,15 +102,71 @@
     },
     {
       "Package": {
+        "Id": "UiPath.WebAPI.Activities",
+        "Version": "1.4.4"
+      },
+      "Assemblies": [
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\avalonedit/5.0.3\\lib/Net40/ICSharpCode.AvalonEdit.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\restsharp/106.10.0\\lib/net452/RestSharp.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.webapi.activities/1.4.4\\lib/net452/UiPath.Web.Activities.Design.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.webapi.activities/1.4.4\\lib/net452/UiPath.Web.Activities.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.webapi.activities/1.4.4\\lib/net452/UiPath.Web.dll"
+      ],
+      "Path": "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.webapi.activities/1.4.4"
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Form.Activities",
+        "Version": "1.1.0-preview"
+      },
+      "Assemblies": [
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\castle.core/4.3.1\\lib/net45/Castle.Core.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\system.runtime.compilerservices.unsafe/4.5.2\\lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\system.threading.tasks.extensions/4.5.1\\lib/netstandard2.0/System.Threading.Tasks.Extensions.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.cefsharpbundle/1.1.1\\lib/net452/CefSharp.BrowserSubprocess.Core.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.cefsharpbundle/1.1.1\\lib/net452/CefSharp.Core.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.cefsharpbundle/1.1.1\\lib/net452/CefSharp.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.cefsharpbundle/1.1.1\\lib/net452/CefSharp.Wpf.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.cefsharpbundle/1.1.1\\lib/net452/chrome_elf.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.cefsharpbundle/1.1.1\\lib/net452/d3dcompiler_47.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.cefsharpbundle/1.1.1\\lib/net452/libcef.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.cefsharpbundle/1.1.1\\lib/net452/libEGL.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.cefsharpbundle/1.1.1\\lib/net452/libGLESv2.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.cefsharpbundle/1.1.1\\lib/net452/msvcp140.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.cefsharpbundle/1.1.1\\lib/net452/UiPath.CEFSharpBundle.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.cefsharpbundle/1.1.1\\lib/net452/vcruntime140.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.cefsharpbundle/1.1.1\\lib/net452/swiftshader/libEGL.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.cefsharpbundle/1.1.1\\lib/net452/swiftshader/libGLESv2.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.form.activities/1.1.0-preview\\lib/net461/UiPath.Callout.Activity.Design.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.form.activities/1.1.0-preview\\lib/net461/UiPath.Callout.Activity.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.form.activities/1.1.0-preview\\lib/net461/UiPath.Callout.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.form.activities/1.1.0-preview\\lib/net461/UiPath.Form.Activities.Design.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.form.activities/1.1.0-preview\\lib/net461/UiPath.Form.Activities.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.form.activities/1.1.0-preview\\lib/net461/UiPath.Form.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.form.activities/1.1.0-preview\\lib/net461/UiPath.Form.Host.Local.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.form.activities/1.1.0-preview\\lib/net461/UiPath.OutOfProcessUi.Common.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.formactivitylibrary/1.1.0-preview\\lib/net461/UiPath.Form.ActivityLibrary.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.formactivitylibrary/1.1.0-preview\\lib/net461/UiPath.Form.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.formactivitylibrary/1.1.0-preview\\lib/net461/UiPath.Form.Host.Local.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.formactivitylibrary/1.1.0-preview\\lib/net461/UiPath.OutOfProcessUi.Common.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.formactivitylibrary.contracts/1.1.0-preview\\lib/net461/UiPath.Form.ActivityLibrary.Contracts.dll"
+      ],
+      "Path": "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\uipath.form.activities/1.1.0-preview"
+    },
+    {
+      "Package": {
         "Id": "UiPath.GSuite.Activities",
         "Version": "1.3.1"
       },
       "Assemblies": [
         "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\bouncycastle/1.8.5\\lib/BouncyCastle.Crypto.dll",
-        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\google.apis/1.40.2\\lib/net45/Google.Apis.dll",
         "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\google.apis/1.40.2\\lib/net45/Google.Apis.PlatformServices.dll",
-        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\google.apis.auth/1.40.2\\lib/net45/Google.Apis.Auth.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\google.apis/1.40.2\\lib/net45/Google.Apis.dll",
         "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\google.apis.auth/1.40.2\\lib/net45/Google.Apis.Auth.PlatformServices.dll",
+        "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\google.apis.auth/1.40.2\\lib/net45/Google.Apis.Auth.dll",
         "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\google.apis.calendar.v3/1.40.2.1611\\lib/net45/Google.Apis.Calendar.v3.dll",
         "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\google.apis.core/1.40.2\\lib/net45/Google.Apis.Core.dll",
         "C:\\Users\\OWRental.DESKTOP-4LDUPJI\\.nuget\\packages\\google.apis.docs.v1/1.40.2.1615\\lib/net45/Google.Apis.Docs.v1.dll",
@@ -127,6 +193,11 @@
     "BouncyCastle": {
       "Id": "BouncyCastle",
       "Version": "1.8.5",
+      "Dependencies": []
+    },
+    "Castle.Core": {
+      "Id": "Castle.Core",
+      "Version": "4.3.1",
       "Dependencies": []
     },
     "ClosedXML": {
@@ -322,14 +393,44 @@
         }
       ]
     },
+    "RestSharp": {
+      "Id": "RestSharp",
+      "Version": "106.10.0",
+      "Dependencies": []
+    },
     "SharpZipLib": {
       "Id": "SharpZipLib",
       "Version": "1.0.0",
       "Dependencies": []
     },
+    "System.Runtime.CompilerServices.Unsafe": {
+      "Id": "System.Runtime.CompilerServices.Unsafe",
+      "Version": "4.5.2",
+      "Dependencies": []
+    },
+    "System.Threading.Tasks.Extensions": {
+      "Id": "System.Threading.Tasks.Extensions",
+      "Version": "4.5.1",
+      "Dependencies": [
+        {
+          "Item1": "System.Runtime.CompilerServices.Unsafe",
+          "Item2": "[4.5.0, )"
+        }
+      ]
+    },
+    "System.ValueTuple": {
+      "Id": "System.ValueTuple",
+      "Version": "4.5.0",
+      "Dependencies": []
+    },
     "UiPath": {
       "Id": "UiPath",
       "Version": "19.10.7312.25504",
+      "Dependencies": []
+    },
+    "UiPath.CefSharpBundle": {
+      "Id": "UiPath.CefSharpBundle",
+      "Version": "1.1.1",
       "Dependencies": []
     },
     "UiPath.Excel.Activities": {
@@ -361,6 +462,75 @@
           "Item2": "[1.0.0, )"
         }
       ]
+    },
+    "UiPath.Form.Activities": {
+      "Id": "UiPath.Form.Activities",
+      "Version": "1.1.0-preview",
+      "Dependencies": [
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[11.0.2, )"
+        },
+        {
+          "Item1": "System.Runtime.CompilerServices.Unsafe",
+          "Item2": "[4.5.2, )"
+        },
+        {
+          "Item1": "System.ValueTuple",
+          "Item2": "[4.5.0, )"
+        },
+        {
+          "Item1": "UiPath.CefSharpBundle",
+          "Item2": "[1.1.1, )"
+        },
+        {
+          "Item1": "Castle.Core",
+          "Item2": "[4.3.1, )"
+        },
+        {
+          "Item1": "System.Threading.Tasks.Extensions",
+          "Item2": "[4.5.1, )"
+        },
+        {
+          "Item1": "UiPath.FormActivityLibrary.Contracts",
+          "Item2": "[1.1.0-preview, )"
+        },
+        {
+          "Item1": "UiPath.FormActivityLibrary",
+          "Item2": "[1.1.0-preview, )"
+        }
+      ]
+    },
+    "UiPath.FormActivityLibrary": {
+      "Id": "UiPath.FormActivityLibrary",
+      "Version": "1.1.0-preview",
+      "Dependencies": [
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[11.0.2, )"
+        },
+        {
+          "Item1": "System.Runtime.CompilerServices.Unsafe",
+          "Item2": "[4.5.2, )"
+        },
+        {
+          "Item1": "System.ValueTuple",
+          "Item2": "[4.5.0, )"
+        },
+        {
+          "Item1": "UiPath.CefSharpBundle",
+          "Item2": "[1.1.1, )"
+        },
+        {
+          "Item1": "UiPath.FormActivityLibrary.Contracts",
+          "Item2": "[1.1.0-preview, )"
+        }
+      ]
+    },
+    "UiPath.FormActivityLibrary.Contracts": {
+      "Id": "UiPath.FormActivityLibrary.Contracts",
+      "Version": "1.1.0-preview",
+      "Dependencies": []
     },
     "UiPath.GSuite.Activities": {
       "Id": "UiPath.GSuite.Activities",
@@ -484,6 +654,24 @@
         {
           "Item1": "UiPath.OCR.Contracts",
           "Item2": "[2.2.1, )"
+        }
+      ]
+    },
+    "UiPath.WebAPI.Activities": {
+      "Id": "UiPath.WebAPI.Activities",
+      "Version": "1.4.4",
+      "Dependencies": [
+        {
+          "Item1": "AvalonEdit",
+          "Item2": "[5.0.3, )"
+        },
+        {
+          "Item1": "Newtonsoft.Json",
+          "Item2": "[11.0.2, )"
+        },
+        {
+          "Item1": "RestSharp",
+          "Item2": "[106.3.1, )"
         }
       ]
     }

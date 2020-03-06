@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="SendCustomerEmail" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ug="clr-namespace:UiPath.GSuite;assembly=UiPath.GSuite" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="SendCustomerEmail" this:SendCustomerEmail.in_CustomerName="Ryan McCann" this:SendCustomerEmail.in_CustomerEmailAddress="ryanmccann89@icloud.com" this:SendCustomerEmail.in_SelectedCourier="Rory Magee Deliveries" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_CustomerName" Type="InArgument(x:String)" />
     <x:Property Name="in_CustomerEmailAddress" Type="InArgument(x:String)" />
@@ -7,7 +7,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>530,628</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>396,386.666666666667</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>SendCustomerEmail_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="21">
@@ -54,9 +54,10 @@
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="SendCustomerEmail" sap:VirtualizedContainerService.HintSize="510,568" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="SendCustomerEmail" sap:VirtualizedContainerService.HintSize="376,326.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="emailBody" />
     </Sequence.Variables>
@@ -65,27 +66,14 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Assign sap:VirtualizedContainerService.HintSize="468,62" sap2010:WorkflowViewState.IdRef="Assign_1">
+    <Assign sap:VirtualizedContainerService.HintSize="334,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
       <Assign.To>
         <OutArgument x:TypeArguments="x:String">[emailBody]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="x:String">["&lt;div style=""padding: 10px; font-family: arial, helvetica, sans-serif; font-size: 12px; border: 10px solid rgb(239,239,239); width: 700px; height: auto;""&gt;&lt;div style=""background: #000; height: 110px; color: #FFF; padding: 25px;""&gt;&lt;h1 style=""font-weight: 100; margin: 0;""&gt;Deliveries 'R' Us&lt;/h1&gt; &lt;h3 style=""font-weight: 100; margin: 0;""&gt;Your Delivery Status&lt;/h3&gt; &lt;/div&gt; &lt;p style=""text-align: justify; font-size:13px; color: rgb(0,0,0);""&gt;Dear "+in_CustomerName+",&lt;/p&gt;&lt;p style=""text-align: justify; font-size:13px;""&gt;Your order has been processed and will be delivered by "+in_SelectedCourier+"&lt;/p&gt;&lt;p style=""text-align: justify; font-size:13px;""&gt;Kind regards,&lt;/p&gt;&lt;p style=""text-align: justify; font-size:13px;""&gt;TNMM Bot&lt;/p&gt;&lt;/div&gt;&lt;div style=""padding:10px; width:700px; background: rgb(239,239,239); border: 10px solid rgb(239,239,239);""&gt;&lt;p style=""font-size: 9pt; font-family: Arial; color: rgb(64,64,65); text-align: justify;""&gt; © 2020 Deliveries 'R' Us Ltd&lt;/p&gt;&lt;/div&gt;"]</InArgument>
+        <InArgument x:TypeArguments="x:String">["&lt;div style=""padding: 10px; font-family: arial, helvetica, sans-serif; font-size: 12px; border: 10px solid rgb(239,239,239); width: 700px; height: auto;""&gt;&lt;div style=""background: #000; height: 50px; color: #FFF; padding: 25px;""&gt;&lt;h1 style=""font-weight: 100; margin: 0;""&gt;Deliveries 'R' Us&lt;/h1&gt; &lt;h2 style=""font-weight: 100; margin: 0;""&gt;Your Delivery Status&lt;/h2&gt; &lt;/div&gt; &lt;p style=""text-align: justify; font-size:13px; color: rgb(0,0,0);""&gt;Dear "+in_CustomerName+",&lt;/p&gt;&lt;p style=""text-align: justify; font-size:13px;""&gt;Your order has been processed and will be delivered by "+in_SelectedCourier+"&lt;/p&gt;&lt;p style=""text-align: justify; font-size:13px;""&gt;Kind regards,&lt;/p&gt;&lt;p style=""text-align: justify; font-size:13px;""&gt;Delivery Bot&lt;/p&gt;&lt;/div&gt;&lt;div style=""padding:10px; width:700px; background: rgb(239,239,239); border: 10px solid rgb(239,239,239);""&gt;&lt;p style=""font-size: 9pt; font-family: Arial; color: rgb(64,64,65); text-align: justify;""&gt; © 2020 Deliveries 'R' Us Ltd&lt;/p&gt;&lt;/div&gt;"]</InArgument>
       </Assign.Value>
     </Assign>
-    <uga:GSuiteApplicationScope ApiKey="{x:Null}" CredentialID="{x:Null}" CredentialSecret="{x:Null}" KeyPath="{x:Null}" Password="{x:Null}" ServiceAccountEmail="{x:Null}" UserEmail="{x:Null}" AuthenticationType="ApiKey" DisplayName="GSuite Application Scope" HasDomainWideAccesss="False" sap:VirtualizedContainerService.HintSize="468,374" sap2010:WorkflowViewState.IdRef="GSuiteApplicationScope_1" KeyType="JSON" Services="Gmail, Sheets">
-      <uga:GSuiteApplicationScope.Body>
-        <ActivityAction x:TypeArguments="ug:SimpleObjectContainer">
-          <ActivityAction.Argument>
-            <DelegateInArgument x:TypeArguments="ug:SimpleObjectContainer" Name="GSuiteScope" />
-          </ActivityAction.Argument>
-          <uga:SendEmail AttachmentList="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" AuthScopesInvalid="False" Body="[emailBody]" DisplayName="Send Mail Message" sap:VirtualizedContainerService.HintSize="434,288" sap2010:WorkflowViewState.IdRef="SendEmail_1" IsDraft="False" IsHTML="True" Subject="Order Update - Deliveries 'R' Us" To="[{in_CustomerEmailAddress}]">
-            <uga:SendEmail.Attachments>
-              <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
-            </uga:SendEmail.Attachments>
-          </uga:SendEmail>
-        </ActivityAction>
-      </uga:GSuiteApplicationScope.Body>
-    </uga:GSuiteApplicationScope>
+    <ui:WriteTextFile DisplayName="Write Text File" FileName="email.html" sap:VirtualizedContainerService.HintSize="334,133.333333333333" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[emailBody]" />
   </Sequence>
 </Activity>
