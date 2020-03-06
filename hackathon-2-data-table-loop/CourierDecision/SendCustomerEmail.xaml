@@ -35,7 +35,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="16">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="32">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -52,6 +52,8 @@
       <AssemblyReference>System.Xaml</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities</AssemblyReference>
       <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="SendCustomerEmail" sap:VirtualizedContainerService.HintSize="510,568" sap2010:WorkflowViewState.IdRef="Sequence_1">
@@ -68,7 +70,7 @@
         <OutArgument x:TypeArguments="x:String">[emailBody]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="x:String">["&lt;div style=""padding: 10px; font-family: arial, helvetica, sans-serif; font-size: 12px; border: 10px solid rgb(239,239,239); width: 700px; height: auto;""&gt;&lt;div style=""display: flex; flex: 1; height: 100px; padding: 10px;""&gt;&lt;/div&gt;&lt;div style=""background: #000; height: 50px; color: #FFF; padding: 25px;""&gt;&lt;h1 style=""font-weight: 100; margin: 0;""&gt;Deliveries 'R' Us&lt;/h1&gt; &lt;h2 style=""font-weight: 100; margin: 0;""&gt;Your Delivery Status&lt;/h2&gt; &lt;/div&gt; &lt;p style=""text-align: justify; font-size:13px; color: rgb(0,0,0);""&gt;Dear "+in_CustomerName+",&lt;/p&gt;&lt;p style=""text-align: justify; font-size:13px;""&gt;Your order has been processed and will be delivered by "+in_SelectedCourier+"&lt;/p&gt;&lt;p style=""text-align: justify; font-size:13px;""&gt;Kind regards,&lt;/p&gt;&lt;p style=""text-align: justify; font-size:13px;""&gt;TNMM Bot&lt;/p&gt;&lt;/div&gt;&lt;div style=""padding:10px; width:700px; background: rgb(239,239,239); border: 10px solid rgb(239,239,239);""&gt;&lt;p style=""font-size: 9pt; font-family: Arial; color: rgb(64,64,65); text-align: justify;""&gt; © 2020 Deliveries 'R' Us Ltd&lt;/p&gt;&lt;/div&gt;"]</InArgument>
+        <InArgument x:TypeArguments="x:String">["&lt;div style=""padding: 10px; font-family: arial, helvetica, sans-serif; font-size: 12px; border: 10px solid rgb(239,239,239); width: 700px; height: auto;""&gt;&lt;div style=""background: #000; height: 110px; color: #FFF; padding: 25px;""&gt;&lt;h1 style=""font-weight: 100; margin: 0;""&gt;Deliveries 'R' Us&lt;/h1&gt; &lt;h3 style=""font-weight: 100; margin: 0;""&gt;Your Delivery Status&lt;/h3&gt; &lt;/div&gt; &lt;p style=""text-align: justify; font-size:13px; color: rgb(0,0,0);""&gt;Dear "+in_CustomerName+",&lt;/p&gt;&lt;p style=""text-align: justify; font-size:13px;""&gt;Your order has been processed and will be delivered by "+in_SelectedCourier+"&lt;/p&gt;&lt;p style=""text-align: justify; font-size:13px;""&gt;Kind regards,&lt;/p&gt;&lt;p style=""text-align: justify; font-size:13px;""&gt;TNMM Bot&lt;/p&gt;&lt;/div&gt;&lt;div style=""padding:10px; width:700px; background: rgb(239,239,239); border: 10px solid rgb(239,239,239);""&gt;&lt;p style=""font-size: 9pt; font-family: Arial; color: rgb(64,64,65); text-align: justify;""&gt; © 2020 Deliveries 'R' Us Ltd&lt;/p&gt;&lt;/div&gt;"]</InArgument>
       </Assign.Value>
     </Assign>
     <uga:GSuiteApplicationScope ApiKey="{x:Null}" CredentialID="{x:Null}" CredentialSecret="{x:Null}" KeyPath="{x:Null}" Password="{x:Null}" ServiceAccountEmail="{x:Null}" UserEmail="{x:Null}" AuthenticationType="ApiKey" DisplayName="GSuite Application Scope" HasDomainWideAccesss="False" sap:VirtualizedContainerService.HintSize="468,374" sap2010:WorkflowViewState.IdRef="GSuiteApplicationScope_1" KeyType="JSON" Services="Gmail, Sheets">
